@@ -34,4 +34,4 @@ Ta chỉ mơ nơi ta rơi xuống mặt đất khô cằn kia sẽ nở hoa
 ----"Mơ"----
 ```
 
-Mình chẳng có gì ngoài hên. Một trong số đó là thằng bạn ở Việt Nam của mình, nó tên là Trần Văn Tú.
+Mình chẳng có gì ngoài hên. Một trong số đó là thằng bạn của mình, nó tên là Trần Văn Tú.
