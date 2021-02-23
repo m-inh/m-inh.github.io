@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>1 trong 10 hối tiếc của Ryan Dahl, founder of NodeJS | m-inh</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="1 trong 10 hối tiếc của Ryan Dahl, founder of NodeJS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="1 trong 10 hối tiếc của Ryan Dahl khi tạo ra NodeJS là khước từ promise làm chuẩn cho JavaScript ngay từ thời điểm ban đầu." />
+<meta property="og:description" content="1 trong 10 hối tiếc của Ryan Dahl khi tạo ra NodeJS là khước từ promise làm chuẩn cho JavaScript ngay từ thời điểm ban đầu." />
+<link rel="canonical" href="/nodejs/2019/04/05/1-trong-10-hoi-tiec-cua-ryan-dahl.html" />
+<meta property="og:url" content="/nodejs/2019/04/05/1-trong-10-hoi-tiec-cua-ryan-dahl.html" />
+<meta property="og:site_name" content="m-inh" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-04-05T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="1 trong 10 hối tiếc của Ryan Dahl, founder of NodeJS" />
+<script type="application/ld+json">
+{"headline":"1 trong 10 hối tiếc của Ryan Dahl, founder of NodeJS","dateModified":"2019-04-05T00:00:00-05:00","datePublished":"2019-04-05T00:00:00-05:00","description":"1 trong 10 hối tiếc của Ryan Dahl khi tạo ra NodeJS là khước từ promise làm chuẩn cho JavaScript ngay từ thời điểm ban đầu.","mainEntityOfPage":{"@type":"WebPage","@id":"/nodejs/2019/04/05/1-trong-10-hoi-tiec-cua-ryan-dahl.html"},"@type":"BlogPosting","url":"/nodejs/2019/04/05/1-trong-10-hoi-tiec-cua-ryan-dahl.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="m-inh" /><style>
+      .site-header {
+        border-top: none
+      }
+      .site-title:hover {
+          text-decoration: none;
+      }
+      .post-link {
+          font-size: 18px;
+      }
+      .img-block {
+        margin-bottom: 25px;
+      }
+      .caption {
+          display: block;
+          text-align: center;
+      }
+  </style>
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">m-inh</a></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">1 trong 10 hối tiếc của Ryan Dahl, founder of NodeJS</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-04-05T00:00:00-05:00" itemprop="datePublished">Apr 5, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>1 trong 10 hối tiếc của Ryan Dahl khi tạo ra NodeJS là khước từ promise làm chuẩn cho JavaScript ngay từ thời điểm ban đầu.</p>
+
+<p>Link bài talk: <a href="https://youtu.be/M3BM9TB-8yA">https://youtu.be/M3BM9TB-8yA</a></p>
+
+<p>Có thể nói promise là một đối tượng quan trọng cho sự phát triển async/await sau này.
+Việc tiếp cận xử lí bất đồng bộ của lập trình viên đã phải trải qua 3 giai đoạn: callback (ES5) -&gt; promise (ES6)-&gt; async/await (ES7).</p>
+
+<p>Việc trải qua giai đoạn làm quen callback trước rồi mới tới promise đã tạo ra rất nhiều rắc rối, và cái giá phải trả là rất lớn:</p>
+<ol>
+  <li>Sự hỗ trợ, duy trì cả 2 phương thức callback và promise của các thư viện là điều bắt buộc khi họ muốn có nhiều người dùng nhất có thể.</li>
+  <li>Việc trộn code giữa callback và promise là không thể tránh khỏi khi lập trình viên tiếp cận những chuẩn cho Javascript sau ES5. Code sẽ rất xấu, nên sẽ khó sử dụng lại. Một cách tiếp cận cho vấn đề này là tạo ra các hàm trung gian trả về promise từ các hàm callback cũ (quá trình này còn được gọi là promisify), rồi sử dụng hàm mới này để gọi sau này. Tuy nhiên thì công sức bỏ ra cũng lớn và rất có khả năng gây ra lỗi. An toàn hơn thì nhờ thư viện làm hộ.</li>
+</ol>
+
+<p>Nhìn lại code của mình viết cách đây 2 năm, thấy quả trộn callback với promise mà mình nghĩ Dahl nói quá chuẩn 😂.</p>
+
+<p>Lại nghĩ sang tới việc phát triển phần mềm từ ban đầu, như thế nào là đủ?</p>
+
+  </div><a class="u-url" href="/nodejs/2019/04/05/1-trong-10-hoi-tiec-cua-ryan-dahl.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <!-- <h2 class="footer-heading">m-inh</h2> -->
+
+    <div class="footer-col-wrapper">
+      <!-- <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+            <li class="p-name">m-inh</li><li><a class="u-email" href="mailto:tienminh.uet@gmail.com">tienminh.uet@gmail.com</a></li></ul>
+      </div> -->
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/m-inh"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">m-inh</span></a></li><li><a href="https://www.linkedin.com/in/m-inh"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">m-inh</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

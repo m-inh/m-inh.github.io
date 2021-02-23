@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-22T19:11:21-06:00</updated><id>/feed.xml</id><title type="html">m-inh</title><entry><title type="html">Phim Ma Trận đã thay đổi cách nghĩ về cuộc sống của mình ra sao</title><link href="/random/2021/01/18/phim-ma-tran-da-thay-doi-cach-nghi-ve-cuoc-song-cua-minh-ra-sao.html" rel="alternate" type="text/html" title="Phim Ma Trận đã thay đổi cách nghĩ về cuộc sống của mình ra sao" /><published>2021-01-18T00:00:00-06:00</published><updated>2021-01-18T00:00:00-06:00</updated><id>/random/2021/01/18/phim-ma-tran-da-thay-doi-cach-nghi-ve-cuoc-song-cua-minh-ra-sao</id><content type="html" xml:base="/random/2021/01/18/phim-ma-tran-da-thay-doi-cach-nghi-ve-cuoc-song-cua-minh-ra-sao.html">&lt;p&gt;Steve Jobs nói con người chỉ có thể xâu chuỗi các sự kiện (connecting the dots) sau khi nhìn lại những việc đã qua.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-22T19:41:24-06:00</updated><id>/feed.xml</id><title type="html">m-inh</title><entry><title type="html">Phim Ma Trận đã thay đổi cách nghĩ về cuộc sống của mình ra sao</title><link href="/random/2021/01/18/phim-ma-tran-da-thay-doi-cach-nghi-ve-cuoc-song-cua-minh-ra-sao.html" rel="alternate" type="text/html" title="Phim Ma Trận đã thay đổi cách nghĩ về cuộc sống của mình ra sao" /><published>2021-01-18T00:00:00-06:00</published><updated>2021-01-18T00:00:00-06:00</updated><id>/random/2021/01/18/phim-ma-tran-da-thay-doi-cach-nghi-ve-cuoc-song-cua-minh-ra-sao</id><content type="html" xml:base="/random/2021/01/18/phim-ma-tran-da-thay-doi-cach-nghi-ve-cuoc-song-cua-minh-ra-sao.html">&lt;p&gt;Steve Jobs nói con người chỉ có thể xâu chuỗi các sự kiện (connecting the dots) sau khi nhìn lại những việc đã qua.&lt;/p&gt;
 
 &lt;p&gt;Kiểu nhiều lúc mình thấy thú vị và rất biết ơn vì những điều đã trải qua và thấy sao nó có sự xâu chuỗi với nhau liền lạc đến vậy.
 Hôm trước nói chuyện với một đứa bạn - xin được giấu tên (đẹp trai, đàn hay, học giỏi, thất tình), mình mới thấy cách nhìn của mình về mọi chuyện trong cuộc sống đã thay đổi 1 cách đáng kể thế nào.&lt;/p&gt;
@@ -93,4 +93,37 @@ Bên cạnh những viện nghiên cứu và khu vui chơi cực kì hiện đ�
 &lt;div class=&quot;img-block&quot;&gt;
     &lt;img src=&quot;/images/7.jpg&quot; alt=&quot;cây thông to hơn cây cột điện cao thế, là có thật&quot; /&gt;  
     &lt;i&gt;&lt;span class=&quot;caption&quot;&gt;cây thông to hơn cây cột điện cao thế, là có thật&lt;/span&gt;&lt;/i&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="random" /><summary type="html">Mất đồ ở Nhật chỉ cần ra sở cảnh sát hỏi, nếu không có, chờ thêm vài ngày rồi ra sở cảnh sát hỏi.</summary></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><category term="random" /><summary type="html">Mất đồ ở Nhật chỉ cần ra sở cảnh sát hỏi, nếu không có, chờ thêm vài ngày rồi ra sở cảnh sát hỏi.</summary></entry><entry><title type="html">1 trong 10 hối tiếc của Ryan Dahl, founder of NodeJS</title><link href="/nodejs/2019/04/05/1-trong-10-hoi-tiec-cua-ryan-dahl.html" rel="alternate" type="text/html" title="1 trong 10 hối tiếc của Ryan Dahl, founder of NodeJS" /><published>2019-04-05T00:00:00-05:00</published><updated>2019-04-05T00:00:00-05:00</updated><id>/nodejs/2019/04/05/1-trong-10-hoi-tiec-cua-ryan-dahl</id><content type="html" xml:base="/nodejs/2019/04/05/1-trong-10-hoi-tiec-cua-ryan-dahl.html">&lt;p&gt;1 trong 10 hối tiếc của Ryan Dahl khi tạo ra NodeJS là khước từ promise làm chuẩn cho JavaScript ngay từ thời điểm ban đầu.&lt;/p&gt;
+
+&lt;p&gt;Link bài talk: &lt;a href=&quot;https://youtu.be/M3BM9TB-8yA&quot;&gt;https://youtu.be/M3BM9TB-8yA&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Có thể nói promise là một đối tượng quan trọng cho sự phát triển async/await sau này.
+Việc tiếp cận xử lí bất đồng bộ của lập trình viên đã phải trải qua 3 giai đoạn: callback (ES5) -&amp;gt; promise (ES6)-&amp;gt; async/await (ES7).&lt;/p&gt;
+
+&lt;p&gt;Việc trải qua giai đoạn làm quen callback trước rồi mới tới promise đã tạo ra rất nhiều rắc rối, và cái giá phải trả là rất lớn:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Sự hỗ trợ, duy trì cả 2 phương thức callback và promise của các thư viện là điều bắt buộc khi họ muốn có nhiều người dùng nhất có thể.&lt;/li&gt;
+  &lt;li&gt;Việc trộn code giữa callback và promise là không thể tránh khỏi khi lập trình viên tiếp cận những chuẩn cho Javascript sau ES5. Code sẽ rất xấu, nên sẽ khó sử dụng lại. Một cách tiếp cận cho vấn đề này là tạo ra các hàm trung gian trả về promise từ các hàm callback cũ (quá trình này còn được gọi là promisify), rồi sử dụng hàm mới này để gọi sau này. Tuy nhiên thì công sức bỏ ra cũng lớn và rất có khả năng gây ra lỗi. An toàn hơn thì nhờ thư viện làm hộ.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Nhìn lại code của mình viết cách đây 2 năm, thấy quả trộn callback với promise mà mình nghĩ Dahl nói quá chuẩn 😂.&lt;/p&gt;
+
+&lt;p&gt;Lại nghĩ sang tới việc phát triển phần mềm từ ban đầu, như thế nào là đủ?&lt;/p&gt;</content><author><name></name></author><category term="nodejs" /><summary type="html">1 trong 10 hối tiếc của Ryan Dahl khi tạo ra NodeJS là khước từ promise làm chuẩn cho JavaScript ngay từ thời điểm ban đầu.</summary></entry><entry><title type="html">Gửi em lap thân yêu</title><link href="/random/2016/02/06/gui-em-lap-than-yeu.html" rel="alternate" type="text/html" title="Gửi em lap thân yêu" /><published>2016-02-06T00:00:00-06:00</published><updated>2016-02-06T00:00:00-06:00</updated><id>/random/2016/02/06/gui-em-lap-than-yeu</id><content type="html" xml:base="/random/2016/02/06/gui-em-lap-than-yeu.html">&lt;p&gt;Dear em lap thân yêu,&lt;/p&gt;
+
+&lt;p&gt;Con đường ta bước cùng nhau tuy chưa dài, nhưng gian nan thử thách trải qua cùng nhau không phải là ít.&lt;/p&gt;
+
+&lt;p&gt;Nhớ những ngày em phải vất vả chạy từ sáng đến tối, build project, gánh máy ảo liên tục, có đợt làm chat phải gánh 2 máy ảo, em nóng, a thương lắm. Nhớ lúc ấy a lo, cuống quít giật bỏ sạc, dây nhợ lằng nhằng mà chạy ra hong ngay em dưới quạt, mong sao em hạ nhiệt.&lt;/p&gt;
+
+&lt;p&gt;Rồi nhớ lần Hackathon, ae cùng chạy deadline đến từng phút, suốt 48h, em miệt mài compile &amp;amp; build project, biết em nóng mà a cũng không biết làm sao, trong khi đó bug to lù lù trước mặt, ae chỉ biết động viên nhau mà code 😢.&lt;/p&gt;
+
+&lt;p&gt;Công việc thì nặng mà bản thân em thì yếu, chip đời 2 Ivy nóng khủng khiếp, ram 4Gb thiếu thốn, GPU onboard càng khiến em mỏng manh hơn.&lt;/p&gt;
+
+&lt;p&gt;Và điều gì đến cũng đến, tháng 2 năm nay, em đã hỏng chip GPU lần đầu tiên 😢 cơn ác mộng đã trở thành sự thật. Anh hận bọn Táo, tại sao lại thiết kế em yếu đuối đến vậy, tại sao chúng cho em một nhan sắc tuyệt vời, lại không thể mang đến cho em sự “nồi đồng cối đá” 😭.&lt;/p&gt;
+
+&lt;p&gt;Dạo gần đây, em lại ốm luôn, thỉnh thoảng giật lag, đến lướt web còn ko mượt như xưa, IDE nhiều khi a ko muốn bật.&lt;/p&gt;
+
+&lt;p&gt;Hic. A bối rối lắm 😧&lt;/p&gt;
+
+&lt;p&gt;…&lt;/p&gt;
+
+&lt;p&gt;Sớm bình phục và cùng a chinh chiến nhé em!&lt;/p&gt;</content><author><name></name></author><category term="random" /><summary type="html">Dear em lap thân yêu,</summary></entry></feed>
