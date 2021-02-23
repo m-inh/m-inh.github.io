@@ -13,8 +13,10 @@ Lần 1 là khi mình vừa mới sang và làm rơi (hoặc bỏ quên) chiếc
 Lần 2 là trên đường đi siêu thị (ở đây mình đi siêu thị 1 tuần 1 lần à), mọi lần đi bằng xe bus nhưng hôm đó mình đi bằng chân (tức là, với 1 mét di chuyển được, thì mình phải tốn ít nhất là 2 bước chân). Có thể là trong lúc chạy bị rớt chăng?!? Thực ra mình không biết rõ rơi trong lúc thanh toán tiền siêu thị hay trên đường tới đó (chà, giá mà mình bít rõ được ấy). Khả năng rơi ở siêu thị thấp hơn, vì sáng hôm sau anh Tưn có giúp mình gọi hỏi siêu thị và họ xác nhận là không có bạn sinh viên xui xẻo nào rơi đồ cả.
 
 Mọi chuyện không có gì đáng kể cho tới khi mình nhận ra một vài điều sau:
+
 Thứ nhất là khoảng cách từ chỗ rơi cho tới đồn cảnh sát là khoảng 10 cây số. Quào! Nếu bỏ qua giả thiết rơi ở siêu thị, tức là có thể có ai đó lượm được thẻ của mình trên đường và ship nó tới đồn cảnh sát, nơi cách chỗ rơi khoảng 10 cây số.
-Thứ hai là đường đi của mình (chỗ nghi ngờ rơi ấy) toàn là cánh đồng à. Tự hỏi, có mấy người đang đi làm đồng, chân lấm tay bùn mà quan tâm tới đồ bị rơi trên đường làm chi (tất nhiên là với hiểu biết và góc nhìn tới thời điểm hiện tại của mình), mà đồ làm rơi chỉ là cái thẻ.
+
+Thứ hai là đường đi của mình (chỗ nghi ngờ rơi ấy) toàn là cánh đồng lúa. Tự hỏi, có mấy người đang đi làm đồng, chân lấm tay bùn mà quan tâm tới đồ bị rơi trên đường làm chi, mà đồ làm rơi chỉ là cái thẻ.
 
 Một điều khác khiến mình thấy chuyện này khá thú vị. Là mình mới biết được sensei (lab mình), mới mua cho 1 đứa Nhật (cùng lab mình) 2 cái thiết bị, mỗi cái 25 man (khoảng 2,5k$ Mẽo) cho nó "nghịch". "Nghịch" có nghĩa là nó chỉ xài để cài đặt thuật toán lên thử, chứ không chắc sẽ dùng cho đề tài nghiên cứu của nó cho năm sau (dẫn lời của 1 bạn Nhật khác, thực ra nguyên văn lời của bạn ấy là "sensei bought it just for his hobby"). Nên có thể 2 thiết bị đó sẽ bị nằm không trong 1 khoảng thời gian dài, nếu bạn ta quyết đi sang hướng nghiên cứu khác. Mình nói có thể vì có khả năng bạn Nhật cũng không biết sensei mua để làm gì chăng?!? Nếu lời của bạn Nhật kia đúng, thì sẽ thú vị.
 
@@ -33,4 +35,16 @@ Bên cạnh những viện nghiên cứu và khu vui chơi cực kì hiện đ�
 4. **Giản dị và xa hoa**. Mình đã được đi dự một lần cầu nguyện của người dân địa phương. Chùa ở đây cực nhiều, và họ theo đạo Phật (một biến thể). Thì điều mình quan sát được là sự khác biệt giữa sự lộng lẫy của những đồ dùng trong nghi thức và sự giản dị ở trang phục của người đi cầu nguyện. Đồ dùng trong nghi thức rất lộng lẫy, mình không chắc có dát vàng hết không vì nhìn nó bóng đến lạ. Ông thày có bảo là cái chùa chính ở chân núi Phú Sĩ có mấy cái đồ được dát vàng và cực to, mình được chiêm ngưỡng qua ảnh (thực ra phía Kyoto cũng có 1 cái chùa được dát vàng nữa cơ, dát cả chùa ý). Trang phục của mấy người đi cầu nguyện thì lại rất đỗi giản dị và bình thường. Mình thấy có 1 bác giống như là thợ điện, quần áo cực sờn, nhưng phong thái rất tự nhiên, và mọi người nói chuyện rất vui vẻ, chứng tỏ mọi người coi chuyện ăn mặc như vậy là chẳng có gì phải bận tâm cả.
 5. **Khó tính và dễ dãi**. Về việc nộp đơn, không cho phép muộn, nhưng có thể điền đơn bằng bút chì, gạch xóa (cộp hanko) nếu cần. Giáo sư đi nhậu với sinh viên rất thoải mái, cười nói vô tư. Tuy nhiên tới lúc bảo vệ vẫn bị chém tơi tả như thường, cho ở lại một (vài) năm nếu cần thiết, lab mình có 1 ông 6 năm PhD chưa tốt nghiệp (bình thường là 3 năm).
 
-![./images/1.jpg]()
+{% include image.html filename="4.jpg" description="gốc đào cực nhìu tủi bên cạnh cánh đồng lúa, đường trải nhựa, kênh dẫn nước bê tông hoàn toàn." %}
+
+{% include image.html filename="1.jpg" description="đồng ruộng bên cạnh đường xá, kênh tưới." %}
+
+{% include image.html filename="2.jpg" description="1 trong 2 cái GPU sensei mua cho bạn cùng lab." %}
+
+{% include image.html filename="3.jpg" description="hệ thống thủy lợi cực tốt, mặc dù chỗ này là vùng núi." %}
+
+{% include image.html filename="5.jpg" description="chùa chiền được làm bằng gỗ, đường đi bằng đá (tiếc là không có chụp)." %}
+
+{% include image.html filename="6.jpg" description="mình có ảnh chụp cánh đồng riêng, tuy nhiên mình nghĩ có mặt mình sẽ có thêm điểm nhấn :'') " %}
+
+{% include image.html filename="7.jpg" description="cây thông to hơn cây cột điện cao thế, là có thật" %}
