@@ -1,3 +1,4 @@
-bundle exec jekyll build
+./build.sh
+
 rm -rf docs/*
 cp -r _site/* docs/
