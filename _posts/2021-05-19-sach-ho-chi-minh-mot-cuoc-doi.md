@@ -16,4 +16,4 @@ Mình chia sẻ nó chỉ với mong muốn cuốn sách có thể tiếp cận 
 - Tải PDF: [Bấm để tải](/files/hcm_mot_cuoc_doi.pdf)
 - Tải Epub: [Bấm để tải](/files/hcm_mot_cuoc_doi.epub)
 
-{% include image.html filename="8.jpg" description="Trên tay bản gốc sách ''Ho Chi Minh, A life'' - W. Duiker" %}
+{% include image.html filename="8.jpg" description="Sách ''Ho Chi Minh, A life'' - W. Duiker" %}
