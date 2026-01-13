@@ -17,4 +17,4 @@ Có một cái hay của việc học sâu một cái gì đó, chính là việ
 
 {% include image.html filename="9.jpg" description="" %}
 
-Yeah, chỉ là bớt dốt hơn một tí thôi ^^
+Haha, chỉ là bớt dốt hơn một tí thôi.
