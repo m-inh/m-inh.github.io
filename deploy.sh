@@ -2,3 +2,4 @@
 
 rm -rf docs/*
 cp -r _site/* docs/
+rm -rf _site
