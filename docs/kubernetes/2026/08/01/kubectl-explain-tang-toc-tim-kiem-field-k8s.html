@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Dùng kubectl explain để tăng tốc tìm kiếm field trong k8s | m-inh</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Dùng kubectl explain để tăng tốc tìm kiếm field trong k8s" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Có một tip giảm thời gian tìm kiếm field để điền yaml nhanh là dùng kubectl explain. Mình áp dụng trong kì thi CKA/CKS/CKAD khá nhiều, và cảm thấy khá hiệu quả, tiết kiệm thời gian, bên cạnh việc tra cứu trên web tài liệu của k8s." />
+<meta property="og:description" content="Có một tip giảm thời gian tìm kiếm field để điền yaml nhanh là dùng kubectl explain. Mình áp dụng trong kì thi CKA/CKS/CKAD khá nhiều, và cảm thấy khá hiệu quả, tiết kiệm thời gian, bên cạnh việc tra cứu trên web tài liệu của k8s." />
+<link rel="canonical" href="https://m-inh.github.io/kubernetes/2026/08/01/kubectl-explain-tang-toc-tim-kiem-field-k8s.html" />
+<meta property="og:url" content="https://m-inh.github.io/kubernetes/2026/08/01/kubectl-explain-tang-toc-tim-kiem-field-k8s.html" />
+<meta property="og:site_name" content="m-inh" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-08-01T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Dùng kubectl explain để tăng tốc tìm kiếm field trong k8s" />
+<script type="application/ld+json">
+{"description":"Có một tip giảm thời gian tìm kiếm field để điền yaml nhanh là dùng kubectl explain. Mình áp dụng trong kì thi CKA/CKS/CKAD khá nhiều, và cảm thấy khá hiệu quả, tiết kiệm thời gian, bên cạnh việc tra cứu trên web tài liệu của k8s.","@type":"BlogPosting","url":"https://m-inh.github.io/kubernetes/2026/08/01/kubectl-explain-tang-toc-tim-kiem-field-k8s.html","headline":"Dùng kubectl explain để tăng tốc tìm kiếm field trong k8s","dateModified":"2026-08-01T00:00:00-05:00","datePublished":"2026-08-01T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://m-inh.github.io/kubernetes/2026/08/01/kubectl-explain-tang-toc-tim-kiem-field-k8s.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://m-inh.github.io/feed.xml" title="m-inh" /><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DK29WL19B7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DK29WL19B7');
+</script><style>
+    .site-header {
+        border-top: none
+    }
+    .site-title:hover {
+        color: black !important;
+    }
+    .site-title:hover {
+        text-decoration: none;
+    }
+    .post-link {
+        font-size: 18px;
+        color: black !important;
+    }
+    .post-title {
+        font-weight: bold;
+        line-height: 50px;
+    }
+    .img-block {
+        margin-bottom: 25px;
+    }
+    .caption {
+        display: block;
+        text-align: center;
+    }
+    .username {
+        color: black !important;
+    }
+    .black {
+        color: black !important;
+    }
+    .highlighter-rouge .highlight {
+        background: lightgray;
+    }
+    pre, code {
+        background-color: lightgray;
+    }
+    body {
+        font-family: Georgia;
+        font-size: 18px;
+        line-height: 1.6em;
+    }
+  </style>
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">m-inh</a></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Dùng kubectl explain để tăng tốc tìm kiếm field trong k8s</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2026-08-01T00:00:00-05:00" itemprop="datePublished">Aug 1, 2026
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Có một tip giảm thời gian tìm kiếm field để điền yaml nhanh là dùng <code class="language-plaintext highlighter-rouge">kubectl explain</code>.
+Mình áp dụng trong kì thi CKA/CKS/CKAD khá nhiều, và cảm thấy khá hiệu quả, tiết kiệm thời gian, bên cạnh việc tra cứu trên web tài liệu của k8s.</p>
+
+<p>Câu lệnh này có ích khi bạn đã có một yaml template rồi và biết cần điền field gì tuy nhiên không nhớ chính xác tên field như nào, giá trị điền gì.</p>
+
+<p>Do tên field tính cả chữ viết hoa thường nên nhiều khi field dài sẽ khó nhớ (vd: <code class="language-plaintext highlighter-rouge">readOnlyRootFilesystem</code>), hoặc có <code class="language-plaintext highlighter-rouge">s</code> hay không (vd: <code class="language-plaintext highlighter-rouge">limits</code>, <code class="language-plaintext highlighter-rouge">requests</code>, <code class="language-plaintext highlighter-rouge">capabilities</code>), hoặc chính xác giá trị enum để điền là gì (vd: <code class="language-plaintext highlighter-rouge">Always</code>, <code class="language-plaintext highlighter-rouge">Never</code>).</p>
+
+<p>Câu lệnh này cũng chạy với các CRD được cài đặt thêm, như <code class="language-plaintext highlighter-rouge">CiliumNetworkPolicy</code>.</p>
+
+<p>Cách dùng đơn giản nhất là: <code class="language-plaintext highlighter-rouge">kubectl explain &lt;resource&gt;</code>, ví dụ <code class="language-plaintext highlighter-rouge">kubectl explain pod</code> - nó sẽ trả về thông tin của pod và các field tầng đầu tiên.</p>
+
+<p>Để đi sâu vào nested field: <code class="language-plaintext highlighter-rouge">kubectl explain pod.spec</code></p>
+
+<p>Để xem tất cả nested field: <code class="language-plaintext highlighter-rouge">kubectl explain pod --recursive</code></p>
+
+<p>Kết hợp với grep: <code class="language-plaintext highlighter-rouge">kubectl explain pod.spec --recursive | grep -A10 security</code></p>
+
+<p>Khi kết hợp với grep thì có thể dùng option <code class="language-plaintext highlighter-rouge">-i</code> để tìm kiếm không phân biệt hoa thường hoặc <code class="language-plaintext highlighter-rouge">-A</code>, <code class="language-plaintext highlighter-rouge">-B</code>, <code class="language-plaintext highlighter-rouge">-C</code> để lấy thêm các dòng phía sau/trước kết quả.</p>
+
+<p>Hãy chạy thử các câu lệnh trên terminal và mình tin bạn sẽ hiểu cách ứng dụng nó trong các kì thi của CNCF cũng như công việc hàng ngày :)</p>
+
+  </div><a class="u-url" href="/kubernetes/2026/08/01/kubectl-explain-tang-toc-tim-kiem-field-k8s.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <!-- <h2 class="footer-heading">m-inh</h2> -->
+
+    <div class="footer-col-wrapper">
+      <!-- <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+            <li class="p-name">m-inh</li><li><a class="u-email" href="mailto:tienminh.uet@gmail.com">tienminh.uet@gmail.com</a></li></ul>
+      </div> -->
+
+      <div class="footer-col footer-col-1"><ul class="social-media-list"><li><a href="https://github.com/m-inh"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">m-inh</span></a></li><li><a href="https://www.linkedin.com/in/m-inh"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">m-inh</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-4">
+        <span>Generated by <a class="black" href="https://jekyllrb.com/">Jekyll</a> and served out of <a class="black" href="https://pages.github.com/">Github Pages</a>.</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
